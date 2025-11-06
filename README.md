@@ -1,20 +1,89 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Lynk Manager Landing Page - Vanilla HTML/CSS/JS Version
 
-# Run and deploy your AI Studio app
+Landing page yang telah dikonversi dari React/TypeScript ke HTML, CSS, dan JavaScript biasa.
 
-This contains everything you need to run your app locally.
+## File Utama
 
-View your app in AI Studio: https://ai.studio/apps/drive/1X7R7WhmsITcmqdF1QSddIgHPe3bAoC4k
+- `index-vanilla.html` - File HTML utama
+- `styles.css` - File CSS dengan semua styling
+- `script.js` - File JavaScript untuk interaktivitas
 
-## Run Locally
+## Fitur yang Telah Dikonversi
 
-**Prerequisites:**  Node.js
+✅ Header dengan scroll effect  
+✅ Hero section  
+✅ Problem section dengan icons  
+✅ Solution section dengan feature cards  
+✅ Advantages section dengan checklist  
+✅ Use cases section  
+✅ Demo section  
+✅ Pricing section dengan kartu pricing  
+✅ FAQ section dengan accordion interaktif  
+✅ CTA section  
+✅ Footer dengan social links  
+✅ Animasi scroll dengan Intersection Observer  
+✅ Responsive design  
 
+## Cara Menggunakan
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Buka file `index-vanilla.html` di browser
+2. Atau deploy ke web server (Apache, Nginx, dll)
+3. Semua dependency external (fonts, icons) sudah linked via CDN
+
+## Perubahan dari Versi React
+
+- ✅ Tidak memerlukan Node.js atau build process
+- ✅ Bisa langsung dibuka di browser
+- ✅ Semua functionality React telah dikonversi ke vanilla JS
+- ✅ Tailwind classes dikonversi ke CSS custom
+- ✅ Icons dari React components dikonversi ke inline SVG
+- ✅ State management diganti dengan DOM manipulation
+- ✅ Event handlers menggunakan addEventListener
+- ✅ Animations menggunakan CSS transitions dan Intersection Observer
+
+## Dependencies
+
+External dependencies yang digunakan:
+- Google Fonts (Inter)
+- Font Awesome icons
+- Swiper.js (jika diperlukan untuk carousel - sudah diinclude tapi belum digunakan)
+
+## Browser Support
+
+Compatible dengan:
+- Chrome (modern)
+- Firefox (modern)  
+- Safari (modern)
+- Edge (modern)
+
+Fallback disediakan untuk browser yang tidak support Intersection Observer.
+
+## Struktur File
+
+```
+/
+├── index-vanilla.html    # Main HTML file
+├── styles.css           # Main CSS file  
+├── script.js           # Main JavaScript file
+└── README-vanilla.md   # This file
+```
+
+## Development
+
+Untuk modifikasi:
+1. Edit HTML di `index-vanilla.html`
+2. Edit styling di `styles.css`
+3. Edit interactivity di `script.js`
+4. Test di browser langsung (no build step needed)
+
+## Performance
+
+- ✅ Tidak ada React bundle overhead
+- ✅ Faster initial load
+- ✅ Smaller total file size
+- ✅ No JavaScript framework dependency
+- ✅ Better SEO (server-side rendered HTML)
+
+---
+
+Converted from React/TypeScript/Vite to vanilla HTML/CSS/JavaScript while maintaining all original functionality and design.

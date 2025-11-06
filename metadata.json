@@ -1,5 +1,0 @@
-{
-  "name": "Lynk Manager Landing Page",
-  "description": "Landing page for Lynk Manager, an automation tool for Lynk.id creators to manage customer follow-ups using Google AppScript, Gmail, and Spreadsheets.",
-  "requestFramePermissions": []
-}

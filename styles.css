@@ -1,0 +1,729 @@
+/* Custom CSS for Lynk Manager Landing Page */
+
+/* CSS Variables for Brand Colors */
+:root {
+    --brand-dark: #2D3E50;
+    --brand-green: #2ECC71;
+    --brand-light: #F8F9FA;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--brand-light);
+    color: var(--brand-dark);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Brand Colors */
+.bg-brand-light {
+    background-color: var(--brand-light);
+}
+
+.bg-brand-dark {
+    background-color: var(--brand-dark);
+}
+
+.bg-brand-green {
+    background-color: var(--brand-green);
+}
+
+.text-brand-dark {
+    color: var(--brand-dark);
+}
+
+.text-brand-green {
+    color: var(--brand-green);
+}
+
+.text-slate-600 {
+    color: var(--slate-600);
+}
+
+.text-slate-500 {
+    color: var(--slate-500);
+}
+
+.text-slate-700 {
+    color: var(--slate-700);
+}
+
+.text-slate-200 {
+    color: var(--slate-200);
+}
+
+.text-slate-300 {
+    color: var(--slate-300);
+}
+
+.text-white {
+    color: white;
+}
+
+.text-red-500 {
+    color: #ef4444;
+}
+
+/* Background Colors */
+.bg-white {
+    background-color: white;
+}
+
+.bg-white\/80 {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-brand-green\/10 {
+    background-color: rgba(46, 204, 113, 0.1);
+}
+
+/* Layout */
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Flexbox Utilities */
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+/* Spacing */
+.space-x-3 > * + * {
+    margin-left: 0.75rem;
+}
+
+.space-x-4 > * + * {
+    margin-left: 1rem;
+}
+
+.space-x-8 > * + * {
+    margin-left: 2rem;
+}
+
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+.space-y-6 > * + * {
+    margin-top: 1.5rem;
+}
+
+.space-y-0 > * + * {
+    margin-top: 0;
+}
+
+/* Padding */
+.p-4 {
+    padding: 1rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+/* Margins */
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.mt-10 {
+    margin-top: 2.5rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Max Width */
+.max-w-3xl {
+    max-width: 48rem;
+}
+
+.max-w-4xl {
+    max-width: 56rem;
+}
+
+.max-w-6xl {
+    max-width: 72rem;
+}
+
+/* Width and Height */
+.w-full {
+    width: 100%;
+}
+
+.w-4 {
+    width: 1rem;
+}
+
+.w-5 {
+    width: 1.25rem;
+}
+
+.w-6 {
+    width: 1.5rem;
+}
+
+.w-8 {
+    width: 2rem;
+}
+
+.h-4 {
+    height: 1rem;
+}
+
+.h-5 {
+    height: 1.25rem;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+
+.h-8 {
+    height: 2rem;
+}
+
+/* Border */
+.border {
+    border-width: 1px;
+}
+
+.border-2 {
+    border-width: 2px;
+}
+
+.border-t {
+    border-top-width: 1px;
+}
+
+.border-b {
+    border-bottom-width: 1px;
+}
+
+.border-slate-200 {
+    border-color: var(--slate-200);
+}
+
+.border-slate-300 {
+    border-color: var(--slate-300);
+}
+
+.border-slate-100 {
+    border-color: #f1f5f9;
+}
+
+.border-brand-dark {
+    border-color: var(--brand-dark);
+}
+
+/* Border Radius */
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/* Shadows */
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Font Sizes */
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+/* Font Weight */
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+/* Leading */
+.leading-tight {
+    line-height: 1.25;
+}
+
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+/* Transforms */
+.transform {
+    transform: translateX(var(--tw-translate-x, 0)) translateY(var(--tw-translate-y, 0)) rotate(var(--tw-rotate, 0)) skewX(var(--tw-skew-x, 0)) skewY(var(--tw-skew-y, 0)) scaleX(var(--tw-scale-x, 1)) scaleY(var(--tw-scale-y, 1));
+}
+
+.translate-y-0 {
+    --tw-translate-y: 0px;
+}
+
+.-translate-y-full {
+    --tw-translate-y: -100%;
+}
+
+.translate-y-5 {
+    --tw-translate-y: 1.25rem;
+}
+
+.hover\:scale-105:hover {
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+}
+
+.hover\:-translate-y-2:hover {
+    --tw-translate-y: -0.5rem;
+}
+
+.rotate-180 {
+    --tw-rotate: 180deg;
+}
+
+/* Transitions */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.duration-700 {
+    transition-duration: 700ms;
+}
+
+.ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Opacity */
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+/* Backdrop Filter */
+.backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+}
+
+/* Overflow */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Max Height */
+.max-h-0 {
+    max-height: 0;
+}
+
+.max-h-96 {
+    max-height: 24rem;
+}
+
+/* Header Styles */
+#header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+#header.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button Styles */
+button, a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+    transform: translateY(-2px);
+}
+
+/* Animated Sections */
+.animated-section {
+    transition: all 0.7s ease-in-out;
+    opacity: 0;
+    transform: translateY(1.25rem);
+}
+
+.animated-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FAQ Styles */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-content.open {
+    max-height: 24rem;
+}
+
+.faq-chevron {
+    transition: transform 0.3s ease;
+}
+
+.faq-chevron.rotated {
+    transform: rotate(180deg);
+}
+
+/* Grid Responsive */
+@media (min-width: 768px) {
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    
+    .md\:flex-row {
+        flex-direction: row;
+    }
+    
+    .md\:space-y-0 > * + * {
+        margin-top: 0;
+    }
+    
+    .md\:space-x-8 > * + * {
+        margin-left: 2rem;
+    }
+    
+    .md\:text-left {
+        text-align: left;
+    }
+    
+    .md\:text-6xl {
+        font-size: 3.75rem;
+    }
+    
+    .md\:text-4xl {
+        font-size: 2.25rem;
+    }
+    
+    .md\:text-xl {
+        font-size: 1.25rem;
+    }
+    
+    .md\:py-24 {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    
+    .md\:py-28 {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    
+    .md\:p-12 {
+        padding: 3rem;
+    }
+    
+    .md\:text-5xl {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:flex-row {
+        flex-direction: row;
+    }
+    
+    .sm\:space-y-0 > * + * {
+        margin-top: 0;
+    }
+    
+    .sm\:space-x-4 > * + * {
+        margin-left: 1rem;
+    }
+    
+    .sm\:w-auto {
+        width: auto;
+    }
+}
+
+/* Gap utilities */
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+/* Hover effects */
+.hover\:bg-slate-700:hover {
+    background-color: var(--slate-700);
+}
+
+.hover\:bg-slate-100:hover {
+    background-color: #f1f5f9;
+}
+
+.hover\:bg-green-300:hover {
+    background-color: #86efac;
+}
+
+.hover\:text-brand-dark:hover {
+    color: var(--brand-dark);
+}
+
+/* Font utilities */
+.font-sans {
+    font-family: 'Inter', sans-serif;
+}
+
+.antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

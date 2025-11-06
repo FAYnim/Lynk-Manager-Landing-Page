@@ -3,84 +3,243 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lynk Manager – Otomatisasi Follow-Up Pelanggan Lynk.id</title>
-    <meta name="description" content="Kelola dan kirim promosi otomatis ke pelanggan Lynk.id langsung dari Gmail dan Spreadsheet. Cepat, aman, dan tanpa login pihak ketiga.">
-    <meta name="keywords" content="lynk manager, lynk.id, google appscript, pengelola pelanggan, follow-up otomatis, gmail spreadsheet, broadcast promosi">
     
+    <!-- Primary Meta Tags -->
+    <title>Lynk Manager – Otomatisasi Follow-Up Pelanggan Lynk.id | Tool Google AppScript Gratis</title>
+    <meta name="title" content="Lynk Manager – Otomatisasi Follow-Up Pelanggan Lynk.id | Tool Google AppScript Gratis">
+    <meta name="description" content="Kelola dan kirim promosi otomatis ke pelanggan Lynk.id langsung dari Gmail dan Spreadsheet. 100% aman, gratis, dan tanpa login pihak ketiga. Tool Google AppScript terpercaya untuk kreator digital.">
+    <meta name="keywords" content="lynk manager, lynk.id, google appscript, pengelola pelanggan, follow-up otomatis, gmail spreadsheet, broadcast promosi, kreator digital, penjual online, otomatisasi email, database pelanggan">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faynim.my.id/lynk-manager/">
+    <meta property="og:title" content="Lynk Manager – Otomatisasi Follow-Up Pelanggan Lynk.id">
+    <meta property="og:description" content="Tool Google AppScript gratis untuk mengotomatiskan pengelolaan data pelanggan Lynk.id. Kirim promosi massal langsung dari Gmail & Spreadsheet dengan aman.">
+    <meta property="og:image" content="https://faynim.my.id/lynk-manager/og-image.jpg">
+    <meta property="og:site_name" content="Lynk Manager by Faydev">
+    <meta property="og:locale" content="id_ID">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://faynim.my.id/lynk-manager/">
+    <meta property="twitter:title" content="Lynk Manager – Otomatisasi Follow-Up Pelanggan Lynk.id">
+    <meta property="twitter:description" content="Tool Google AppScript gratis untuk mengotomatiskan pengelolaan data pelanggan Lynk.id. 100% aman dan tanpa login pihak ketiga.">
+    <meta property="twitter:image" content="https://faynim.my.id/lynk-manager/twitter-image.jpg">
+    <meta property="twitter:creator" content="@faris.a.y">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="author" content="Faydev - Faris Ahmad Yoga">
+    <meta name="publisher" content="Faydev">
+    <meta name="copyright" content="© 2025 Faydev. All rights reserved.">
+    <meta name="language" content="Indonesian">
+    <meta name="geo.region" content="ID">
+    <meta name="geo.country" content="Indonesia">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://faynim.my.id/lynk-manager/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- External CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Lynk Manager",
+        "description": "Tool Google AppScript untuk otomatisasi follow-up pelanggan Lynk.id. Kelola data pembeli dan kirim promosi otomatis langsung dari Gmail dan Spreadsheet.",
+        "url": "https://faynim.my.id/lynk-manager/",
+        "author": {
+            "@type": "Person",
+            "name": "Faris Ahmad Yoga",
+            "url": "https://faynim.my.id",
+            "sameAs": [
+                "https://www.instagram.com/faris.a.y",
+                "https://www.threads.net/@faris.a.y"
+            ]
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Faydev",
+            "url": "https://faynim.my.id"
+        },
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web Browser",
+        "offers": [
+            {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "IDR",
+                "name": "Versi Gratis",
+                "description": "Script utama Google AppScript dan panduan instalasi"
+            },
+            {
+                "@type": "Offer",
+                "price": "35000",
+                "priceCurrency": "IDR", 
+                "name": "Versi Pro",
+                "description": "Source code penuh dengan support dan update lifetime"
+            }
+        ],
+        "featureList": [
+            "Auto Gmail Scraping dari notifikasi Lynk.id",
+            "Integrasi Google Spreadsheet",
+            "Auto Broadcast Promosi",
+            "100% Secure - Data di ekosistem Google",
+            "Tanpa login pihak ketiga"
+        ],
+        "screenshot": "https://faynim.my.id/lynk-manager/screenshot.jpg",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "12"
+        }
+    }
+    </script>
+
+    <!-- Business/Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Faydev",
+        "url": "https://faynim.my.id",
+        "logo": "https://faynim.my.id/logo.png",
+        "sameAs": [
+            "https://www.instagram.com/faris.a.y",
+            "https://www.threads.net/@faris.a.y"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Developer Support"
+        }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apakah Lynk Manager aman?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sangat aman. Script ini berjalan sepenuhnya di dalam akun Google Anda melalui Google AppScript. Data Anda tidak pernah meninggalkan ekosistem Google dan tidak dikirim ke server pihak ketiga manapun, termasuk kami."
+                }
+            },
+            {
+                "@type": "Question", 
+                "name": "Apakah butuh akses API tambahan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tidak. Lynk Manager hanya menggunakan layanan bawaan Google seperti GmailApp dan SpreadsheetApp yang sudah tersedia di Google AppScript. Anda tidak perlu mengurus kunci API atau proses otorisasi yang rumit."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah script-nya bisa dimodifikasi?",
+                "acceptedAnswer": {
+                    "@type": "Answer", 
+                    "text": "Tentu saja. Versi Pro memberikan Anda akses ke kode sumber yang tidak terenkripsi, sehingga Anda bisa memodifikasinya sesuai kebutuhan. Anda bisa mengubah template email, menambahkan logika segmentasi, atau mengintegrasikannya dengan script lain."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-brand-light font-sans antialiased text-brand-dark">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-dark text-white px-4 py-2 rounded">Skip to main content</a>
+
     <!-- Header -->
-    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out opacity-0 -translate-y-full">
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out opacity-0 -translate-y-full" role="banner">
         <div class="bg-white/80 backdrop-blur-sm shadow-md">
             <div class="container mx-auto px-6 py-4">
                 <div class="flex justify-start items-center">
-                    <span class="text-xl font-bold text-brand-dark">
+                    <h1 class="text-xl font-bold text-brand-dark">
                         Lynk Manager
-                    </span>
+                    </h1>
                 </div>
             </div>
         </div>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <!-- Hero Section -->
-        <section id="hero-section" class="bg-white animated-section">
+        <section id="hero-section" class="bg-white animated-section" role="banner">
             <div class="container mx-auto px-6 py-20 text-center">
                 <div class="max-w-4xl mx-auto">
                     <h1 class="text-4xl md:text-6xl font-bold text-brand-dark leading-tight mb-4">
-                        Otomatisasi Follow-Up Pelanggan Lynk.id dengan Lynk Manager
+                        Otomatisasi Follow-Up Pelanggan <span class="text-brand-green">Lynk.id</span> dengan Lynk Manager
                     </h1>
                     <p class="text-lg md:text-xl text-slate-600 mb-8">
-                        Kelola data pembeli dan kirim promosi otomatis langsung dari Gmail & Spreadsheet.
+                        Kelola data pembeli dan kirim promosi otomatis langsung dari Gmail & Spreadsheet. <strong>100% aman</strong>, <strong>gratis</strong>, dan <strong>tanpa login pihak ketiga</strong>.
                     </p>
                     <a 
                         href="https://lynk.id/faynim/x36v36p5zw3y"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="inline-block bg-brand-dark text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-slate-700 transition-all duration-300 transform hover:scale-105"
+                        aria-label="Coba Lynk Manager sekarang - gratis"
                     >
-                        Coba Sekarang
+                        Coba Sekarang - Gratis
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- Problem Section -->
-        <section class="py-16 md:py-24 animated-section">
+        <section class="py-16 md:py-24 animated-section" aria-labelledby="problem-heading">
             <div class="container mx-auto px-6 text-center max-w-3xl">
-                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">
+                <h2 id="problem-heading" class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">
                     Kenapa Banyak Kreator Kehilangan Peluang Promosi?
                 </h2>
                 <p class="text-lg text-slate-600 mb-8">
-                    Pengguna Lynk.id seringkali menyalin data pelanggan secara manual, membuang waktu berharga, dan akhirnya tidak sempat melakukan follow-up. Ini mengakibatkan hilangnya potensi penjualan berulang.
+                    Pengguna <strong>Lynk.id</strong> seringkali menyalin data pelanggan secara manual, membuang waktu berharga, dan akhirnya tidak sempat melakukan follow-up. Ini mengakibatkan hilangnya potensi penjualan berulang.
                 </p>
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-left">
-                    <div class="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                        <svg class="w-6 h-6 text-red-500 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-left" role="list">
+                    <div class="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm" role="listitem">
+                        <svg class="w-6 h-6 text-red-500 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <circle cx="12" cy="12" r="10" />
                             <path d="m15 9-6 6" />
                             <path d="m9 9 6 6" />
                         </svg>
                         <span class="text-slate-700">Salin data manual & repetitif</span>
                     </div>
-                    <div class="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                        <svg class="w-6 h-6 text-red-500 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <div class="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm" role="listitem">
+                        <svg class="w-6 h-6 text-red-500 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <circle cx="12" cy="12" r="10" />
                             <path d="m15 9-6 6" />
                             <path d="m9 9 6 6" />
                         </svg>
                         <span class="text-slate-700">Data pelanggan tercecer</span>
                     </div>
-                    <div class="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                        <svg class="w-6 h-6 text-red-500 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <div class="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm" role="listitem">
+                        <svg class="w-6 h-6 text-red-500 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <circle cx="12" cy="12" r="10" />
                             <path d="m15 9-6 6" />
                             <path d="m9 9 6 6" />
@@ -92,19 +251,19 @@
         </section>
 
         <!-- Solution Section -->
-        <section class="py-16 md:py-24 bg-white animated-section">
+        <section class="py-16 md:py-24 bg-white animated-section" aria-labelledby="solution-heading">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
+                    <h2 id="solution-heading" class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
                         Solusi Otomatis, Aman, dan Tanpa Ribet
                     </h2>
                     <p class="text-lg text-slate-600">
-                        Lynk Manager adalah alat berbasis Google AppScript yang mengotomatiskan pengambilan data pelanggan dari Gmail Anda dan memungkinkan broadcast promosi langsung dari Spreadsheet.
+                        <strong>Lynk Manager</strong> adalah alat berbasis <strong>Google AppScript</strong> yang mengotomatiskan pengambilan data pelanggan dari Gmail Anda dan memungkinkan broadcast promosi langsung dari Spreadsheet.
                     </p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="inline-block bg-brand-green/10 text-brand-green p-4 rounded-full mb-4">
+                    <article class="bg-white p-8 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block bg-brand-green/10 text-brand-green p-4 rounded-full mb-4" aria-hidden="true">
                             <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <rect width="20" height="16" x="2" y="4" rx="2" />
                                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
@@ -112,9 +271,9 @@
                         </div>
                         <h3 class="text-xl font-bold text-brand-dark mb-2">Scrape Otomatis dari Gmail</h3>
                         <p class="text-slate-600">Secara otomatis menarik data pembeli dari notifikasi email Lynk.id tanpa perlu copy-paste manual.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="inline-block bg-brand-green/10 text-brand-green p-4 rounded-full mb-4">
+                    </article>
+                    <article class="bg-white p-8 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block bg-brand-green/10 text-brand-green p-4 rounded-full mb-4" aria-hidden="true">
                             <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
                                 <path d="M14 2v4a2 2 0 0 0 2 2h4" />
@@ -125,9 +284,9 @@
                         </div>
                         <h3 class="text-xl font-bold text-brand-dark mb-2">Integrasi Spreadsheet</h3>
                         <p class="text-slate-600">Semua data terorganisir rapi dalam Google Spreadsheet, mudah diakses dan dikelola kapan saja.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="inline-block bg-brand-green/10 text-brand-green p-4 rounded-full mb-4">
+                    </article>
+                    <article class="bg-white p-8 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block bg-brand-green/10 text-brand-green p-4 rounded-full mb-4" aria-hidden="true">
                             <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path d="M4.1 11.9a1 1 0 0 1 0-1.8l15-6.2a1 1 0 0 1 1.2 1.2l-6.2 15a1 1 0 0 1-1.8 0l-2.4-5.9-5.9-2.5Z" />
                                 <path d="m13 13 6 6" />
@@ -135,7 +294,7 @@
                         </div>
                         <h3 class="text-xl font-bold text-brand-dark mb-2">Auto Broadcast Promosi</h3>
                         <p class="text-slate-600">Kirim email promosi, update, atau newsletter ke seluruh database pelanggan dengan sekali klik dari Spreadsheet.</p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -318,48 +477,48 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="py-16 md:py-24 bg-white animated-section">
+        <section class="py-16 md:py-24 bg-white animated-section" aria-labelledby="faq-heading">
             <div class="container mx-auto px-6 max-w-3xl">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">
+                    <h2 id="faq-heading" class="text-3xl md:text-4xl font-bold text-brand-dark">
                         Pertanyaan Umum
                     </h2>
                 </div>
-                <div>
-                    <div class="faq-item border-b border-slate-200 py-6">
-                        <button class="faq-button w-full flex justify-between items-center text-left">
+                <div role="list">
+                    <div class="faq-item border-b border-slate-200 py-6" role="listitem">
+                        <button class="faq-button w-full flex justify-between items-center text-left" aria-expanded="false" aria-controls="faq-1">
                             <h3 class="text-lg font-semibold text-brand-dark">Apakah Lynk Manager aman?</h3>
-                            <svg class="faq-chevron w-6 h-6 text-slate-500 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <svg class="faq-chevron w-6 h-6 text-slate-500 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6" />
                             </svg>
                         </button>
-                        <div class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                        <div id="faq-1" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0">
                             <div class="text-slate-600 leading-relaxed mt-4">
                                 <p>Sangat aman. Script ini berjalan sepenuhnya di dalam akun Google Anda melalui Google AppScript. Data Anda tidak pernah meninggalkan ekosistem Google dan tidak dikirim ke server pihak ketiga manapun, termasuk kami.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="faq-item border-b border-slate-200 py-6">
-                        <button class="faq-button w-full flex justify-between items-center text-left">
+                    <div class="faq-item border-b border-slate-200 py-6" role="listitem">
+                        <button class="faq-button w-full flex justify-between items-center text-left" aria-expanded="false" aria-controls="faq-2">
                             <h3 class="text-lg font-semibold text-brand-dark">Apakah butuh akses API tambahan?</h3>
-                            <svg class="faq-chevron w-6 h-6 text-slate-500 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <svg class="faq-chevron w-6 h-6 text-slate-500 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6" />
                             </svg>
                         </button>
-                        <div class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                        <div id="faq-2" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0">
                             <div class="text-slate-600 leading-relaxed mt-4">
                                 <p>Tidak. Lynk Manager hanya menggunakan layanan bawaan Google seperti GmailApp dan SpreadsheetApp yang sudah tersedia di Google AppScript. Anda tidak perlu mengurus kunci API atau proses otorisasi yang rumit.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="faq-item border-b border-slate-200 py-6">
-                        <button class="faq-button w-full flex justify-between items-center text-left">
+                    <div class="faq-item border-b border-slate-200 py-6" role="listitem">
+                        <button class="faq-button w-full flex justify-between items-center text-left" aria-expanded="false" aria-controls="faq-3">
                             <h3 class="text-lg font-semibold text-brand-dark">Apakah script-nya bisa dimodifikasi?</h3>
-                            <svg class="faq-chevron w-6 h-6 text-slate-500 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <svg class="faq-chevron w-6 h-6 text-slate-500 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6" />
                             </svg>
                         </button>
-                        <div class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                        <div id="faq-3" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0">
                             <div class="text-slate-600 leading-relaxed mt-4">
                                 <p>Tentu saja. Versi Pro memberikan Anda akses ke kode sumber yang tidak terenkripsi, sehingga Anda bisa memodifikasinya sesuai kebutuhan. Anda bisa mengubah template email, menambahkan logika segmentasi, atau mengintegrasikannya dengan script lain.</p>
                             </div>
@@ -391,17 +550,17 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200">
+    <footer class="bg-white border-t border-slate-200" role="contentinfo">
         <div class="container mx-auto px-6 py-8">
             <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                <p class="text-slate-500 text-center md:text-left">&copy; <span id="current-year">2025</span> Lynk Manager. All rights reserved.</p>
+                <p class="text-slate-500 text-center md:text-left">&copy; <span id="current-year">2025</span> Lynk Manager. All rights reserved. Dibuat dengan ❤️ oleh <a href="https://faynim.my.id" class="text-brand-dark font-semibold hover:underline" rel="author">Faydev</a></p>
                 <div class="flex flex-col md:flex-row items-center gap-4">
                     <div class="flex items-center space-x-4">
-                        <a href="https://www.threads.net/@faris.a.y" target="_blank" rel="noopener noreferrer" aria-label="Threads" class="text-slate-500 hover:text-brand-dark transition-colors">
-                            <i class="fa-brands fa-threads text-2xl"></i>
+                        <a href="https://www.threads.net/@faris.a.y" target="_blank" rel="noopener noreferrer me" aria-label="Follow Faydev on Threads" class="text-slate-500 hover:text-brand-dark transition-colors">
+                            <i class="fa-brands fa-threads text-2xl" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.instagram.com/faris.a.y" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-slate-500 hover:text-brand-dark transition-colors">
-                            <i class="fa-brands fa-instagram text-2xl"></i>
+                        <a href="https://www.instagram.com/faris.a.y" target="_blank" rel="noopener noreferrer me" aria-label="Follow Faydev on Instagram" class="text-slate-500 hover:text-brand-dark transition-colors">
+                            <i class="fa-brands fa-instagram text-2xl" aria-hidden="true"></i>
                         </a>
                     </div>
                     <a href="https://faynim.my.id" target="_blank" rel="noopener noreferrer" class="text-slate-500 font-semibold hover:text-brand-dark transition-colors">
@@ -412,6 +571,7 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
